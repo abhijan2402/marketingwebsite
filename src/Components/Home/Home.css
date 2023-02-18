@@ -1,0 +1,20 @@
+.main_container
+{
+    background: url('../../assest/Cloud.gif');
+    background-repeat: none;
+    background-size: cover;
+    height: 100vh
+}
+.main_content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 50px;
+    font-weight: bolder;
+}
+.main_content Button {
+    width: 250px;
+    font-size: 20px;
+    border-radius: 3px;
+}
