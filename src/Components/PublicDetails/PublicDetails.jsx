@@ -31,7 +31,6 @@ const PublicDetails = () => {
                 net-zero by 2025 and now the creative innovation agency wants to
                 help clients move forward in their eco journey too.
               </p>
-              <img src={pic} alt="" />
               <p>
                 A new climate charter encourages clients to take positive
                 climate action by committing to 5 key principles that will help
@@ -74,7 +73,6 @@ const PublicDetails = () => {
                 has shown us that we can work smarter to save time, money and
                 the planet.
               </p>
-              <img src={pic} alt="" />
               <p>
                 It's our job to empower clients to take bold action in the fight
                 against climate change. The carbon kickback is a tangible way
@@ -104,6 +102,8 @@ const PublicDetails = () => {
                 Ben and Elvis’ Caroline Davison, that encourages return on Co2
                 to become the new measure for effectiveness in advertising.
               </p>
+              <img src={pic} alt="" />
+              <img src={pic} alt="" />
               <img src={pic} alt="" />
               <img src={pic} alt="" />
             </div>
