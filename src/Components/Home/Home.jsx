@@ -24,7 +24,7 @@ const Home = () => {
             </div>
           </div>
           <div className="main_content">
-            <Link style={{textDecoration:"none"}} to="/PublicDetails">  <Button variant="contained">Cute Cloud</Button> </Link>
+            <Link style={{textDecoration:"none"}} to="/HomePage">  <Button variant="contained">Cute Cloud</Button> </Link>
           </div>
         </div>
        

@@ -1,0 +1,24 @@
+.card
+{
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(0.8);  
+    transition: 1s ease;
+    opacity: 0.5;
+    backdrop-filter: blur(10px);
+}
+.card img
+{
+    height: 15rem;
+}
+.card_date
+{
+    color: grey;
+}
+.card-text
+{
+    font-size: 30px;
+    font-weight: bold;
+}

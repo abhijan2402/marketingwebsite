@@ -3,10 +3,12 @@ import {Link} from 'react-router-dom';
 import "./PublicDetails.css";
 import Button from '@mui/material/Button';
 import pic from "../../assest/bg_im.jpg";
+import Navbar from '../Navbar/Navbar';
 
 const PublicDetails = () => {
   return (
     <>
+        <Navbar/>
       <div className="container_1">
         <div className="container_2">
           <div className="main_img">
