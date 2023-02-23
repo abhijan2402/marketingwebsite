@@ -2,6 +2,8 @@
 {
     cursor: pointer;
     transition: 0.3s;
+    width: 30rem;
+    margin-top: 20px;
 }
 .card:hover{
     transform: scale(0.8);  
@@ -21,4 +23,48 @@
 {
     font-size: 30px;
     font-weight: bold;
+}
+
+/* Media Quuery */
+
+@media screen and (max-width: 1058px) {
+    .card{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 896px) {
+    .card{
+        width: 22rem;
+    }
+    .card-text{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width: 800px) {
+    .card{
+        width: 20rem;
+    }
+}
+@media screen and (max-width: 732px) {
+    .card{
+        width: 30rem;
+    }
+}
+@media screen and (max-width: 575px) {
+    .card{
+        width: 25rem;
+    }
+}
+@media screen and (max-width: 480px) {
+    .card{
+        width: 22rem;
+    }
+}
+@media screen and (max-width: 375px) {
+    .card{
+        width: 18rem;
+    }
+    .card-text{
+        font-size: 20px;
+    }
 }

@@ -87,6 +87,7 @@ const About = () => {
         <div className="Contact">
           <div className="services_heading">
             <h1>Contact Us</h1>
+            <p>We'd love to hear from you! Send us a question or comment with the form below and we'll be in touch with you as soon as possible. </p>
           </div>
           <div className="contact_details">
           <div className="form">
@@ -95,21 +96,23 @@ const About = () => {
                 id="outlined-basic"
                 label="Your Name"
                 variant="outlined"
-                style={{ width: "600px" }}
+                className="input_filed1"
               />
               <br />
               <TextField
                 id="outlined-basic"
                 label="Your Email"
                 variant="outlined"
-                style={{ width: "600px", marginTop: "20px" }}
+             className="input_filed"
+             style={{marginTop:"20px"}}
               />
               <br />
               <TextField
                 id="outlined-basic"
                 label="Your Number"
                 variant="outlined"
-                style={{ width: "600px", marginTop: "20px" }}
+             className="input_filed"
+             style={{marginTop:"20px"}}
               />
               <br />
               <textarea
@@ -117,13 +120,8 @@ const About = () => {
                 id="message"
                 cols="50"
                 rows="5"
-                value="Enter Your Message"
-                style={{
-                  width: "600px",
-                  marginTop: "20px",
-                  padding: "15px",
-                  color: "grey",
-                }}
+                placeholder="Enter Your Message"
+                className="msg_input"
               ></textarea>
             </form>
             <Button variant="contained" >

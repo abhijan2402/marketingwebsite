@@ -1,9 +1,7 @@
-.container_1{
-    /* border: 2px solid red; */
-}
+
 .container_2{
     /* border: 2px solid rgb(19, 46, 249); */
-    margin: 0 10%;
+    margin: 2% 10%;
     padding: 20px;
 }
 .headline{
@@ -37,7 +35,7 @@
     /* margin: 0 10%; */
     display: flex;
     justify-content: space-evenly;
-    background-color: rgba(180, 179, 179, 0.137);
+    /* background-color: rgba(180, 179, 179, 0.137); */
 
 }
 .contact{
@@ -105,4 +103,109 @@
 }
 .instagram:hover{
     color: rgb(243, 38, 38);
+}
+
+
+
+/* Media Query */
+@media screen and (max-width: 1310px) {
+    .content_block {
+        padding: 0px;
+    }
+    .container_2{
+        margin: 2% 2%;
+    }
+    .links_abt{
+        width: 90%;
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 1058px) {
+    .content_block {
+        padding: 0px;
+    }
+    .container_2{
+        margin: 2% 2%;
+    }
+    .abt p {
+        line-height: 22px;
+    }
+    .links_abt{
+        width: 90%;
+        padding: 50px 20px;
+    }
+}
+@media screen and (max-width: 896px) {
+    .links_abt{
+        width: 90%;
+        padding: 50px 20px;
+    }
+    .abt p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 800px) {
+    .links_abt{
+        width: 90%;
+        padding: 50px 20px;
+    }
+    .abt p {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 732px) {
+    .footer{
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact{
+        width: 100%;
+        padding: 35px 50px;
+    }
+    .links_abt{
+        padding: 20px 20px;
+    }
+    .links_abt .abt .links {
+        padding-top: 25px;
+    }
+    .headline h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 575px) {
+    .links_abt{
+        padding: 20px 20px;
+    }
+    .links_abt .abt .links {
+        padding-top: 25px;
+    }
+    .headline h1{
+        font-size: 30px;
+    }
+    .headline h5 {
+        font-size: 15px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .container_2{
+        padding: 35px 0; 
+    }
+    .headline h1{
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .links_abt .abt h5{
+        font-size: 20px;
+    }
+    .links_abt .abt p{
+        font-size: medium;
+        letter-spacing: 1px;
+    }
+    .links_abt {
+        padding: 0;
+    }
+    .links_abt .abt .links {
+        padding-bottom: 10px;
+    }
 }

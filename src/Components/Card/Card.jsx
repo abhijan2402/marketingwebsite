@@ -4,7 +4,7 @@ import './Card.css';
 const Card = () => {
   return (
     <>
-      <div className="card" style={{ width: "30rem", marginTop:"20px"}}>
+      <div className="card">
         <div>
             <img src={pic} className="card-img-top" alt="..." />
         </div>
