@@ -31,13 +31,48 @@ const HomePage = () => {
               
               <Card />
             </Link>
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/PublicDetails"
+            >
+              
+              <Card />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/PublicDetails"
+            >
+              
+              <Card />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/PublicDetails"
+            >
+              
+              <Card />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/PublicDetails"
+            >
+              
+              <Card />
+            </Link>
+            <Link
+              style={{ textDecoration: "none", color: "black" }}
+              to="/PublicDetails"
+            >
+              
+              <Card />
+            </Link>
+
           </div>
         </div>
+
+
+
+        
         <div className="footer">
           <div className="contact">
             <div className="location">
@@ -61,7 +96,6 @@ const HomePage = () => {
                 Excepturi consectetur dolores sequi soluta labore voluptate sint
                 debitis placeat odit ad.
               </p>
-              <Link to='/About' style={{textDecoration:"none"}}>  <Button variant="contained" style={{ height:"30px"}}>Learn More</Button>  </Link>
               <div className="links">
                 <Link style={{textDecoration:"none"}}><LinkedInIcon style={{fontSize:"50px"}} className="linkedin"/></Link>
                 <Link style={{textDecoration:"none"}}><FacebookIcon style={{fontSize:"50px"}} className="facebook"/></Link>

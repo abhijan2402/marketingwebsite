@@ -35,7 +35,7 @@ const About = () => {
               it with our great SEO powers as well as outdoor marketing skills.
             </p>
             <Link to="/HomePage" style={{ textDecoration: "none" }}>
-              {" "}
+              
               <Button variant="contained">Learn More</Button>{" "}
             </Link>
           </div>

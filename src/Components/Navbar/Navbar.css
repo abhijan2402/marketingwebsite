@@ -6,6 +6,9 @@
 {
     padding: 0 30px;
 }
+.nav-item a {
+    font-weight: 600;
+}
 
 @media screen and (max-width: 989px) {
     .nav-item

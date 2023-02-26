@@ -1,4 +1,6 @@
-
+.container_1{
+    margin-top: 60px;
+}
 .container_2{
     /* border: 2px solid rgb(19, 46, 249); */
     margin: 2% 10%;
@@ -35,7 +37,7 @@
     /* margin: 0 10%; */
     display: flex;
     justify-content: space-evenly;
-    /* background-color: rgba(180, 179, 179, 0.137); */
+    background-color: rgba(180, 179, 179, 0.137);
 
 }
 .contact{

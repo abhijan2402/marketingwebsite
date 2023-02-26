@@ -1,3 +1,8 @@
+.main_card:hover{
+    background-color: rgba(255, 17, 0, 0.614);
+    transform: scale(0.8);  
+    transition: 1s ease;
+}
 .card
 {
     cursor: pointer;
@@ -5,9 +10,7 @@
     width: 30rem;
     margin-top: 20px;
 }
-.card:hover{
-    transform: scale(0.8);  
-    transition: 1s ease;
+.card:hover{   
     opacity: 0.5;
     backdrop-filter: blur(10px);
 }
