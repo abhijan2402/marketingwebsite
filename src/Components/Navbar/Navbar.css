@@ -1,0 +1,23 @@
+#navbarNav
+{
+    margin-left: 50px;
+}
+.nav-item
+{
+    padding: 0 30px;
+}
+.nav-item a {
+    font-weight: 600;
+}
+
+@media screen and (max-width: 989px) {
+    .nav-item
+{
+    padding: 0 10px;
+}
+#navbarNav
+{
+    margin-left: 0px;
+    margin-top: 10px;
+}
+}
