@@ -1,3 +1,7 @@
+.main_card{
+    margin-top: 20px;
+    border: none;
+}
 .main_card:hover{
     background-color: rgba(255, 17, 0, 0.614);
     transform: scale(0.8);  
@@ -8,7 +12,6 @@
     cursor: pointer;
     transition: 0.3s;
     width: 30rem;
-    margin-top: 20px;
 }
 .card:hover{   
     opacity: 0.5;
@@ -16,7 +19,7 @@
 }
 .card img
 {
-    height: 15rem;
+    height: 18rem;
 }
 .card_date
 {
@@ -24,8 +27,7 @@
 }
 .card-text
 {
-    font-size: 30px;
-    font-weight: bold;
+    font-size: 25px;
 }
 
 /* Media Quuery */

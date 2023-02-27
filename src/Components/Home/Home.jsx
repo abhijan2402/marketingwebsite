@@ -1,6 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
-import Button from "@mui/material/Button";
+import { Link } from "react-router-dom";
 import "./Home.css";
 
 const Home = () => {
@@ -15,19 +14,29 @@ const Home = () => {
           </div>
           <div className="me_details_skills">
             <div className="me_details_skill1">
-              <h5>I'm a <span>minimalist</span></h5>
+              <h5>
+                I'm a <span>minimalist</span>
+              </h5>
               <h1>Designer</h1>
             </div>
-            <div className="me_details_skill2">
-              <h5>I'm a  <span>creative</span></h5>
-              <h1>Developer</h1>
-            </div>
-          </div>
-          <div className="main_content">
-            <Link style={{textDecoration:"none"}} to="/HomePage">  <Button variant="contained">Cute Cloud</Button> </Link>
+            <Link
+              to="/HomePage"
+              style={{
+                textDecoration: "none",
+                color: "black",
+                cursor: "pointer",
+              }}
+              className="developer"
+            >
+              <div className="me_details_skill2">
+                <h5>
+                  I'm a <span>creative</span>
+                </h5>
+                <h1>Developer</h1>
+              </div>
+            </Link>
           </div>
         </div>
-       
       </div>
     </>
   );

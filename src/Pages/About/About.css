@@ -12,7 +12,7 @@
 .about{
     /* border: 3px solid blue; */
     padding: 80px 40px;
-    width: 50%;
+    width: 65%;
     height: 500px;
 
 }
@@ -26,15 +26,9 @@
     word-spacing: 5px;
     line-height: 30px;
 }
-.about  Button {
-    margin-top: 10px;
-    font-size: 20px;
-    background-color: black;
-    width: 250px;
-}
 .main_bg
 {
-    margin-top: 20px;
+    /* margin-top: -20px; */
     width: 45%;
     height: 80%;
     background-image: url("../../assest/mr2.jpg");
@@ -44,99 +38,9 @@
 
 }
 
-.services_heading {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-}
-.services_heading p {
-    font-size: 25px;
-    text-align: center;
-    padding: 10px;
-    color: gray;
-}
-.services{
-    padding: 20px;
-    display: flex;
-}
-.service_1{
-    width: 33%;
-    padding: 20px;
-}
-.service_1 p {
-    /* font-size: 20px; */
-    padding: 8px 0;
-    word-spacing: 5px;
-    line-height: 30px;
-}
 
-.contact_details{
-    /* border: 2px solid green; */
-    display: flex;
-    justify-content: center;
-    padding: 40px 0;
 
-}
-.form Button{
-    margin-top: 20px;
-    width: 200px;
-}
-.img{
-    width: 45%;
-}
-.img .cnt_img{
-    margin-top: 20px;
-    width: 100%;
-    height: 350px;
-    background-image: url("../../assest/contact.jpg");
-    background-position: center;
-    background-size: 370px;
-    background-repeat: no-repeat;
-}
-.media_icons{
-    /* border: 2px solid red; */
-    padding: 20px;
-    display: flex;
-    justify-content: space-evenly;
-}
-.linkedin{
-    font-size: 50px;
-    color: black;
-    transition: 0.3s;
-}
-.linkedin:hover{
-    color: rgb(38, 38, 243);
-}
-.facebook{
-    font-size: 50px;
-    color: black;
-    transition: 0.3s;
-}
-.facebook:hover{
-    color: rgb(38, 38, 243);
-}
-.instagram{
-    font-size: 50px;
-    color: black;
-    transition: 0.3s;
-}
-.instagram:hover{
-    color: rgb(243, 38, 38);
-}
-.input_filed1{
-    width: 600px;
-}
-.input_filed{
-    width: 600px;
-    margin-top: 50px;
-}
-.msg_input{
-    width: 600px;
-    margin-top: 20px;
-    padding: 15px;
-    color: grey;
-}
+
 
 
 /* Media Query */
@@ -178,17 +82,20 @@
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
+        height: 1000px;
+        
+    }
+    .about_container{
+        padding: 50px 10px;
     }
     .about{
         width: 100%;
-        height: 700px;
+        height: 500px;
     }
     .about Button{
         margin-top: 15px;
     }
-    .abt_container{
-        height: 1000px;
-    }
+  
     .main_bg{
         width: 100%;
         background-size: cover;
@@ -238,8 +145,13 @@
 
     }
     .about{
-        height: 1000px;
+        height: 700px;
     }
+    .main_bg
+{
+   margin-bottom: 20px;
+
+}
 }
 @media screen and (max-width: 625px){
     .services{
@@ -259,8 +171,8 @@
         padding: 15px;
     } 
     .about p {
-        font-size: 20px;
-        line-height: 40px;
+        font-size: 15px;
+        line-height: 35px;
     }
     .service_1 p{
         font-size: 20px;

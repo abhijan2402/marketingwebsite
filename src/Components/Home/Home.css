@@ -4,18 +4,8 @@
   background-size: cover;
   height: 100vh;
 }
-.main_content {
-  display: flex;
-  justify-content:center ;
-  align-items: center;
-  padding-top: 90px;
-}
-.main_content Button {
-  width: 250px;
-  font-size: 20px;
-  border-radius: 3px;
-  background-color: #000;
-}
+
+
 .Me_details {
   display: flex;
   justify-content: center;

@@ -82,13 +82,13 @@
     justify-content: space-evenly;
     padding-top: 40px;
 }
-.linkedin{
+.youtube{
     font-size: 50px;
     color: black;
     transition: 0.3s;
 }
-.linkedin:hover{
-    color: rgb(38, 38, 243);
+.youtube:hover{
+    color: rgb(255, 0, 0);
 }
 .facebook{
     font-size: 50px;

@@ -5,7 +5,7 @@ import "./HomePage.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 import MailIcon from "@mui/icons-material/Mail";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import YouTubeIcon from '@mui/icons-material/YouTube';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
@@ -79,9 +79,9 @@ const HomePage = () => {
                 debitis placeat odit ad.
               </p>
               <div className="links">
-                <Link style={{textDecoration:"none"}}><LinkedInIcon style={{fontSize:"50px"}} className="linkedin"/></Link>
-                <Link style={{textDecoration:"none"}}><FacebookIcon style={{fontSize:"50px"}} className="facebook"/></Link>
-                <Link style={{textDecoration:"none"}}><InstagramIcon style={{fontSize:"50px"}} className="instagram"/></Link>              
+                <Link to="https://www.youtube.com/" target="_blank" style={{textDecoration:"none"}}><YouTubeIcon style={{fontSize:"50px"}} className="youtube"/></Link>
+                <Link to="https://www.facebook.com/MDMA.Studio" target="_blank" style={{textDecoration:"none"}}><FacebookIcon style={{fontSize:"50px"}} className="facebook"/></Link>
+                <Link to="https://www.instagram.com/moderndaymarketingagency/" target="_blank" style={{textDecoration:"none"}}><InstagramIcon style={{fontSize:"50px"}} className="instagram"/></Link>              
               </div>
             </div>
           </div>
