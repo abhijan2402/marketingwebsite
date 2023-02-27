@@ -1,22 +1,22 @@
 import React from "react";
 import pic from '../../assest/bg_im.jpg';
 import './Card.css';
-const Card = () => {
+const Card = ({postData,onclick}) => {
   return (
     <>
-    <div className="main_card">
+    <button onClick={onclick} className="main_card">
       <div className="card">
           <div>
-              <img src={pic} className="card-img-top" alt="..." />
+              <img src={postData.titleMainImage} className="card-img-top" alt="..." />
           </div>
           <div className="card-body">
-              <p className="card_date">14 April 2021</p>
+              <p className="card_date">{postData.uploadedData}</p>
               <p className="card-text">
-                  Iris launches 'Carbon kickback' incentivising clients to fight climate change
+                {postData.heading}
               </p>
           </div>
         </div>
-    </div>
+    </button>
      
     </>
   );

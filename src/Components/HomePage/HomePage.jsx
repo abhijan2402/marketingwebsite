@@ -1,5 +1,5 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useEffect, useState } from "react";
+import { Link ,useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./HomePage.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
@@ -9,11 +9,28 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import Button from '@mui/material/Button';
-
+import { db } from "../../firebase";
+import { collection, query, getDocs } from "firebase/firestore";
 
 import Card from "../Card/Card";
 
 const HomePage = () => {
+  const navigate=useNavigate();
+  const [posts,setPosts]=useState([]);
+  useEffect(()=>{
+    getPostData();
+  },[])
+  const getPostData = async () => {
+    let resultArray = [];
+    const queryRef = query(collection(db, "orderItems"));
+    return getDocs(queryRef)
+    .then((querySnapshot)=>{
+        querySnapshot.forEach((doc) => {
+            resultArray.push({ id: doc.id, ...doc.data() });
+        })
+        setPosts(resultArray)
+    })
+  };
   return (
     <>
       <Navbar />
@@ -24,55 +41,20 @@ const HomePage = () => {
             <h1>What we've been up to</h1>
           </div>
           <div className="content_block">
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-            <Link
-              style={{ textDecoration: "none", color: "black" }}
-              to="/PublicDetails"
-            >
-              
-              <Card />
-            </Link>
-
+            {
+              posts&&
+              posts.map((item,index)=>(
+                  <Card 
+                    key={index} 
+                    onclick={()=>{
+                      navigate("/PublicDetails",{state:item})
+                    }} 
+                    postData={item}
+                   />
+              ))
+            }
           </div>
-        </div>
-
-
-
-        
+        </div>       
         <div className="footer">
           <div className="contact">
             <div className="location">
