@@ -39,9 +39,11 @@ const PublicDetails = () => {
                 }
                 {
                   postData.videos.map((video,index)=>(
-                    <video width="250"  controls >
-                      <source src={video} />
-                    </video>
+                    <div style={{width:"90%",height:'70vh',resize: 'both',display:"flex",alignItems:"center",justifyContent:"center"}}> 
+                      <video controls autoPlay={true} >
+                        <source src={video} />
+                      </video>
+                    </div>
                   ))
                 }
               </div>
