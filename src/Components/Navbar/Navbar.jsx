@@ -1,5 +1,5 @@
 import React from "react";
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const Navbar = () => {
@@ -7,7 +7,7 @@ const Navbar = () => {
     <>
       <nav className="navbar fixed-top navbar-expand-lg navbar-light bg-light">
         <div className="container-fluid">
-        
+
           <a className="navbar-brand" href="/">
             LOGO
           </a>
@@ -25,28 +25,28 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarNav">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link to="/HomePage" style={{textDecoration:"none"}}><a className="nav-link active" aria-current="page" >
+                <Link to="/HomePage" style={{ textDecoration: "none" }}><a className="nav-link active" aria-current="page" >
                   Home
                 </a></Link>
-                
+
               </li>
               <li className="nav-item">
-              <Link to="/About" style={{textDecoration:"none"}}><a className="nav-link">
+                <Link to="/About" style={{ textDecoration: "none" }}><a className="nav-link">
                   About
                 </a></Link>
-               
+
               </li>
               <li className="nav-item">
-              <Link to="/Services" style={{textDecoration:"none"}}><a className="nav-link" >
+                <Link to="/Services" style={{ textDecoration: "none" }}><a className="nav-link" >
                   Services
                 </a></Link>
-                
+
               </li>
               <li className="nav-item">
-              <Link to="/Contact" style={{textDecoration:"none"}}><a className="nav-link" >
-                  Contact
+                <Link to="/Contact" style={{ textDecoration: "none" }}><a className="nav-link" >
+                  Feedback
                 </a></Link>
-                
+
               </li>
             </ul>
           </div>
