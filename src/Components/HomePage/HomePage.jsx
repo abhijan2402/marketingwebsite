@@ -1,35 +1,34 @@
 import React, { useEffect, useState } from "react";
-import { Link ,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import Navbar from "../Navbar/Navbar";
 import "./HomePage.css";
 import LocationOnIcon from "@mui/icons-material/LocationOn";
 import PermPhoneMsgIcon from "@mui/icons-material/PermPhoneMsg";
 import MailIcon from "@mui/icons-material/Mail";
-import YouTubeIcon from '@mui/icons-material/YouTube';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import Button from '@mui/material/Button';
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import Button from "@mui/material/Button";
 import { db } from "../../firebase";
 import { collection, query, getDocs } from "firebase/firestore";
 
 import Card from "../Card/Card";
 
 const HomePage = () => {
-  const navigate=useNavigate();
-  const [posts,setPosts]=useState([]);
-  useEffect(()=>{
+  const navigate = useNavigate();
+  const [posts, setPosts] = useState([]);
+  useEffect(() => {
     getPostData();
-  },[])
+  }, []);
   const getPostData = async () => {
     let resultArray = [];
     const queryRef = query(collection(db, "orderItems"));
-    return getDocs(queryRef)
-    .then((querySnapshot)=>{
-        querySnapshot.forEach((doc) => {
-            resultArray.push({ id: doc.id, ...doc.data() });
-        })
-        setPosts(resultArray)
-    })
+    return getDocs(queryRef).then((querySnapshot) => {
+      querySnapshot.forEach((doc) => {
+        resultArray.push({ id: doc.id, ...doc.data() });
+      });
+      setPosts(resultArray);
+    });
   };
   return (
     <>
@@ -37,24 +36,23 @@ const HomePage = () => {
       <div className="container_1">
         <div className="container_2">
           <div className="headline">
-            <h5>News & Insights</h5>
-            <h1>What we've been up to</h1>
+            <h1>THIS IS</h1>
+            <h1>MODERN DAY</h1>
+            <h1>Marketing Agency</h1>
           </div>
           <div className="content_block">
-            {
-              posts&&
-              posts.map((item,index)=>(
-                  <Card 
-                    key={index} 
-                    onclick={()=>{
-                      navigate("/PublicDetails",{state:item})
-                    }} 
-                    postData={item}
-                   />
-              ))
-            }
+            {posts &&
+              posts.map((item, index) => (
+                <Card
+                  key={index}
+                  onclick={() => {
+                    navigate("/PublicDetails", { state: item });
+                  }}
+                  postData={item}
+                />
+              ))}
           </div>
-        </div>       
+        </div>
         <div className="footer">
           <div className="contact">
             <div className="location">
@@ -79,9 +77,36 @@ const HomePage = () => {
                 debitis placeat odit ad.
               </p>
               <div className="links">
-                <Link to="https://www.youtube.com/" target="_blank" style={{textDecoration:"none"}}><YouTubeIcon style={{fontSize:"50px"}} className="youtube"/></Link>
-                <Link to="https://www.facebook.com/MDMA.Studio" target="_blank" style={{textDecoration:"none"}}><FacebookIcon style={{fontSize:"50px"}} className="facebook"/></Link>
-                <Link to="https://www.instagram.com/moderndaymarketingagency/" target="_blank" style={{textDecoration:"none"}}><InstagramIcon style={{fontSize:"50px"}} className="instagram"/></Link>              
+                <Link
+                  to="https://www.youtube.com/"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <YouTubeIcon
+                    style={{ fontSize: "50px" }}
+                    className="youtube"
+                  />
+                </Link>
+                <Link
+                  to="https://www.facebook.com/MDMA.Studio"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <FacebookIcon
+                    style={{ fontSize: "50px" }}
+                    className="facebook"
+                  />
+                </Link>
+                <Link
+                  to="https://www.instagram.com/moderndaymarketingagency/"
+                  target="_blank"
+                  style={{ textDecoration: "none" }}
+                >
+                  <InstagramIcon
+                    style={{ fontSize: "50px" }}
+                    className="instagram"
+                  />
+                </Link>
               </div>
             </div>
           </div>
