@@ -1,19 +1,19 @@
 import React, { useEffect, useState } from "react";
-import {Link,useLocation} from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import "./PublicDetails.css";
 import Button from '@mui/material/Button';
 import pic from "../../assest/bg_im.jpg";
 import Navbar from '../Navbar/Navbar';
 
 const PublicDetails = () => {
-  const location=useLocation();
-  const [postData,setPostData]=useState('');
-  useEffect(()=>{
+  const location = useLocation();
+  const [postData, setPostData] = useState('');
+  useEffect(() => {
     setPostData(location.state);
-  },[])
+  }, [])
   return (
     <>
-      <Navbar/>
+      <Navbar />
       {
         postData &&
         <div className="container_1">
@@ -33,14 +33,14 @@ const PublicDetails = () => {
                   {postData.subHeading}
                 </p>
                 {
-                  postData.images.map((image,index)=>(
+                  postData.images.map((image, index) => (
                     <img key={index} src={image} alt="" />
                   ))
                 }
                 {
-                  postData.videos.map((video,index)=>(
-                    <div style={{width:"90%",height:'70vh',resize: 'both',display:"flex",alignItems:"center",justifyContent:"center"}}> 
-                      <video controls autoPlay={true} >
+                  postData.videos.map((video, index) => (
+                    <div style={{ width: "100%", height: '70vh', resize: 'both', display: "flex", alignItems: "center", justifyContent: "center" }}>
+                      <video controls autoPlay={true} width="100%" >
                         <source src={video} />
                       </video>
                     </div>
