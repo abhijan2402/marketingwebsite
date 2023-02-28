@@ -39,7 +39,7 @@ const PublicDetails = () => {
                 }
                 {
                   postData.videos.map((video,index)=>(
-                    <video width="750" height="500" controls >
+                    <video width="250"  controls >
                       <source src={video} />
                     </video>
                   ))
@@ -47,11 +47,6 @@ const PublicDetails = () => {
               </div>
             </div>
           </div>
-          <div className="btn">
-            <Button variant="outlined">Learn More</Button>
-            <Link to="/" style={{textDecoration:"none"}}> <Button variant="outlined">Go Back</Button> </Link>
-          </div>
-
         </div>
       }
     </>

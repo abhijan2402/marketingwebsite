@@ -63,19 +63,19 @@ const Contact = () => {
             <div className="img">
               <div className="cnt_img"></div>
               <div className="media_icons">
-                <Link style={{ textDecoration: "none" }}>
+                <Link to="https://www.youtube.com/" target="_blank" style={{textDecoration:"none"}}>
                   <YouTubeIcon
                     style={{ fontSize: "50px" }}
                     className="youtube"
                   />
                 </Link>
-                <Link style={{ textDecoration: "none" }}>
+                <Link to="https://www.facebook.com/MDMA.Studio" target="_blank" style={{ textDecoration: "none" }}>
                   <FacebookIcon
                     style={{ fontSize: "50px" }}
                     className="facebook"
                   />
                 </Link>
-                <Link style={{ textDecoration: "none" }}>
+                <Link to="https://www.instagram.com/moderndaymarketingagency/" target="_blank" style={{ textDecoration: "none" }}>
                   <InstagramIcon
                     style={{ fontSize: "50px" }}
                     className="instagram"
