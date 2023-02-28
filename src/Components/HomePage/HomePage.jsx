@@ -72,9 +72,9 @@ const HomePage = () => {
             <div className="abt">
               <h5>About the Company</h5>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Excepturi consectetur dolores sequi soluta labore voluptate sint
-                debitis placeat odit ad.
+                Our agency believes in enabling a culture that embraces the
+                colorful world we live in and using data-driven insights to
+                better connect brands with people's souls and dreams.
               </p>
               <div className="links">
                 <Link
