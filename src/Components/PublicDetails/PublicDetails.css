@@ -42,15 +42,7 @@
   overflow: hidden;
   padding: 20px 20px;
 }
-.btn {
-  margin: 150px 200px;
-  display: flex;
-  justify-content: space-between;
-}
-.btn button {
-  background-color: transparent;
-  color: Blue;
-}
+
 
 
 

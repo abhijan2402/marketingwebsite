@@ -1,10 +1,11 @@
 .container_1{
     margin-top: 60px;
+    /* border: 2px solid rgb(0, 168, 17); */
 }
 .container_2{
     /* border: 2px solid rgb(19, 46, 249); */
-    margin: 2% 10%;
-    padding: 20px;
+    margin: 0% 10%;
+    padding: 0px 20px;
 }
 .headline{
     display: flex;
@@ -60,6 +61,7 @@
 }
 .contact .mail{
     display: flex;
+
     margin-top: 20px;
 }
 .contact .mail p{
@@ -106,10 +108,29 @@
 .instagram:hover{
     color: rgb(243, 38, 38);
 }
+.image{
+    object-fit: cover;
+}
 
+.brands{
+    margin-top: 20px;
+    text-align: center;
+}
+.brands h2 {
+    font-weight: 700;
+}
+.brands marquee 
+{
+    font-size: 25px;
+}
 
 
 /* Media Query */
+@media screen and (max-width: 1610px){
+    .headline {
+        width: 100%;
+    }
+}
 @media screen and (max-width: 1310px) {
     .content_block {
         padding: 0px;
@@ -159,6 +180,7 @@
     .footer{
         flex-direction: column;
         align-items: center;
+        margin: 0%;
     }
     .contact{
         width: 100%;
@@ -175,6 +197,9 @@
     }
 }
 @media screen and (max-width: 575px) {
+    .footer{
+        margin: 0%;
+    }
     .links_abt{
         padding: 20px 20px;
     }
@@ -189,6 +214,9 @@
     }
 }
 @media screen and (max-width: 480px) {
+    .footer{
+        margin: 0%;
+    }
     .container_2{
         padding: 35px 0; 
     }
@@ -197,6 +225,42 @@
     }
 }
 @media screen and (max-width: 375px) {
+    .container_1 {
+        width: 400px;
+    }
+    .footer{
+        margin: 0%;
+    }
+    .contact{
+        padding: 35px 0px;
+    }
+    .contact .mail{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .mail p {
+        padding-left: 5px;
+    }
+    .contact .phone {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .phone p {
+        margin-top: 10px;
+    }
+    .contact .location {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .contact .location p {
+        margin-top: 10px;
+    }
+    .brands marquee {
+        font-size: 20px;
+    }
     .links_abt .abt h5{
         font-size: 20px;
     }

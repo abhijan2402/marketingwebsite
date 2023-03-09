@@ -1,13 +1,26 @@
 .contact_container{
-    margin-top: 70px;
-    padding: 20px 8px;
+    padding: 70px 8px;
+    background: url(../../assest/sbg.webp);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    /* height: 100vh; */
 }
 .contact_details{
     /* border: 2px solid green; */
     display: flex;
     justify-content: center;
-    padding: 40px 0;
+    padding: 18px 0;
 
+}
+.contact_heading{
+    text-align: center;
+}
+.contact_heading h1 {
+    font-size: 50px;
+}
+.contact_heading p {
+    font-size: 20px;
 }
 .form Button{
     margin-top: 20px;
@@ -66,8 +79,27 @@
     width: 600px;
     margin-top: 20px;
     padding: 15px;
-    color: grey;
+    color: rgb(0, 0, 0);
+    background: transparent;
 }
+.dropdown 
+{
+    /* border: 2px solid; */
+    padding-top: 15px;
+    background: transparent;
+}
+.dropdown  .services
+{
+    font-size: 18px;
+    border: 1px solid rgba(76, 76, 76, 0.603);
+    border-radius: 4px;
+    color: grey;
+    padding: 18px 5px;
+    width: 100%;
+    background: transparent;
+    
+}
+
 
 
 /* Media Query */

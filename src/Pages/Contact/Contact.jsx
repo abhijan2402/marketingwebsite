@@ -43,7 +43,7 @@ const Contact = () => {
       <ToastContainer />
       <div className="contact_container">
         <div className="Contact">
-          <div className="services_heading">
+          <div className="contact_heading">
             <h1>Feedback</h1>
             <p>
               We'd love to hear from you! Send us a question or comment with the
@@ -76,6 +76,16 @@ const Contact = () => {
                   }}
                 />
                 <br />
+                <div className="dropdown">
+                  <select name="services" className="services" >
+                    <option value="" disabled selected hidden className="question">
+                      What we can do for you?
+                    </option>
+                    <option value="Marketing">Marketing</option>
+                    <option value="Design">Design</option>
+                    <option value="Branding">Branding</option>
+                  </select>
+                </div>
                 <textarea
                   value={feedback}
                   name="message"
@@ -98,7 +108,7 @@ const Contact = () => {
               <div className="cnt_img"></div>
               <div className="media_icons">
                 <Link
-                  to="https://www.youtube.com/"
+                  to="https://www.youtube.com/@moderndaymarketingagency749"
                   target="_blank"
                   style={{ textDecoration: "none" }}
                 >

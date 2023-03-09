@@ -2,9 +2,9 @@ import React from "react";
 import Navbar from "../../Components/Navbar/Navbar";
 import "./Services.css";
 
-import DesignServicesIcon from '@mui/icons-material/DesignServices';
-import AddBusinessIcon from '@mui/icons-material/AddBusiness';
-import BrandingWatermarkIcon from '@mui/icons-material/BrandingWatermark';
+import Fingerprint from '@mui/icons-material/Fingerprint';
+import AddBusinessIcon from "@mui/icons-material/AddBusiness";
+import BrandingWatermarkIcon from "@mui/icons-material/BrandingWatermark";
 
 const Services = () => {
   return (
@@ -22,38 +22,41 @@ const Services = () => {
           </div>
           <div className="services">
             <div className="service_1">
-              <AddBusinessIcon style={{fontSize:"50px", marginBottom:"10px"}}/>
-              <h4>Markiting</h4>
+              <AddBusinessIcon
+                style={{ fontSize: "70px", marginBottom: "10px", color:"orange" }}
+              />
+              <h4 style={{color:"orange"}}>Markiting</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                Quibusdam, magni? Aliquam, dolorum quis et illum velit assumenda
-                voluptas odio fugit provident dicta itaque molestias veniam?
-                Totam labore beatae possimus modi placeat nemo temporibus,
-                repellendus molestias consectetur! Debitis suscipit doloribus
-                ducimus?
+                Helping you reach people's eyes, and stay in their hearts. What
+                is more powerful than a strong message? <br /><br />
+                - Ad Campaigns <br />
+                - Social Media <br />
+                - Content Strategy <br />
+                - Photo & Video <br />
               </p>
             </div>
             <div className="service_1">
-            <BrandingWatermarkIcon style={{fontSize:"50px", marginBottom:"10px"}}/>
-              <h4>Branding</h4>
+              <BrandingWatermarkIcon
+                style={{ fontSize: "70px", marginBottom: "10px", color:"#ff3838" }}
+              />
+              <h4 style={{color:"#ff3838"}}>Branding</h4>
               <p>
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque
-                hic qui doloribus voluptatum unde, assumenda natus deserunt sed
-                quibusdam pariatur ex, magnam error! Odit in, ex deleniti
-                reprehenderit optio alias natus animi, necessitatibus cumque
-                voluptates quo. Ad inventore laborum blanditiis.
+                We understand in this ever-growing market, standing out can be
+                as simple as translating the soul of your brand.  <br /><br /> -
+                Identity <br /> - Positioning <br /> - Strategy <br /> -
+                Messaging and Tone
               </p>
             </div>
             <div className="service_1">
-            <DesignServicesIcon style={{fontSize:"50px", marginBottom:"10px"}}/>
-            <h4>Graphic Design</h4>
+        <Fingerprint style={{ fontSize: "70px", marginBottom: "10px", color:"green" }} />
+
+              <h4 style={{color:"green"}}>Design</h4>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Voluptas et cupiditate repudiandae accusantium laborum molestiae
-                earum quo necessitatibus eos? Impedit iure reprehenderit
-                consequuntur sapiente? Eveniet, consequuntur iste voluptas
-                voluptatem provident perferendis quaerat blanditiis fugit ut
-                dolor quis quod nulla placeat?
+                You focus on the ideas, we'll give you the visuals that'll make
+                it memorable. <br /> <br />
+                - Websites <br />
+                - UI/UX <br />
+                - 3D Rendering <br />- Animation & Graphics
               </p>
             </div>
           </div>
