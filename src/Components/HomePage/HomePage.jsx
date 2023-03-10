@@ -88,19 +88,19 @@ const HomePage = () => {
 
 
           <Carousel autoPlay interval="2000" infiniteLoop showThumbs={false}>
-                <div>
-                    <img src={pic} />
-                    {/* <p className="legend"></p> */}
-                </div>
-                <div>
-                    <img src={pic2} />
-                    {/* <p className="legend"></p> */}
-                </div>
-                <div>
-                    <img src={pic3} />
-                    {/* <p className="legend"></p> */}
-                </div>
-            </Carousel>
+            <div>
+              <img src={pic} style={{ height: "400px" }} />
+              {/* <p className="legend"></p> */}
+            </div>
+            <div>
+              <img src={pic2} style={{ height: "400px" }} />
+              {/* <p className="legend"></p> */}
+            </div>
+            <div>
+              <img src={pic3} style={{ height: "400px" }} />
+              {/* <p className="legend"></p> */}
+            </div>
+          </Carousel>
 
         </div>
 
@@ -109,6 +109,12 @@ const HomePage = () => {
             Brands we've worked with <br /> (we can't wait to have yours here
             too!)
           </h2>
+          <marquee width="100%" direction="right" height="100px">
+            - Sepal - Hera - The Sanctuary Bar & Kitchen - Orka Cafe - Green
+            Park Hotels - Wilderness Retreat Resort - Zozoz's PIzzeria -
+            Telangana Spice Kitchen - Ultron Electronix - Avasa - Autumn Leaf
+            Cafe - Shriya Som - Fix My Nutrition - Quiclo - Darzan
+          </marquee>
           <marquee width="100%" direction="right" height="100px">
             - Sepal - Hera - The Sanctuary Bar & Kitchen - Orka Cafe - Green
             Park Hotels - Wilderness Retreat Resort - Zozoz's PIzzeria -

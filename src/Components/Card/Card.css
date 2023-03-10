@@ -1,75 +1,86 @@
-.main_card{
+.main_card {
     margin-top: 20px;
     border: none;
 }
-.main_card:hover{
+
+.main_card:hover {
     background-color: rgba(255, 17, 0, 0.614);
-    transform: scale(0.8);  
+    background-color: lightgrey;
+    transform: scale(0.8);
     transition: 1s ease;
 }
-.card
-{
+
+.card {
     cursor: pointer;
     transition: 0.3s;
     width: 30rem;
 }
-.card:hover{   
+
+.card:hover {
     opacity: 0.5;
     backdrop-filter: blur(10px);
 }
-.card img
-{
+
+.card img {
     height: 18rem;
 }
-.card_date
-{
+
+.card_date {
     color: grey;
 }
-.card-text
-{
+
+.card-text {
     font-size: 25px;
 }
 
 /* Media Quuery */
 
 @media screen and (max-width: 1058px) {
-    .card{
+    .card {
         width: 25rem;
     }
 }
+
 @media screen and (max-width: 896px) {
-    .card{
+    .card {
         width: 22rem;
     }
-    .card-text{
+
+    .card-text {
         font-size: 22px;
     }
 }
+
 @media screen and (max-width: 800px) {
-    .card{
+    .card {
         width: 20rem;
     }
 }
+
 @media screen and (max-width: 732px) {
-    .card{
+    .card {
         width: 30rem;
     }
 }
+
 @media screen and (max-width: 575px) {
-    .card{
+    .card {
         width: 25rem;
     }
 }
+
 @media screen and (max-width: 480px) {
-    .card{
+    .card {
         width: 22rem;
     }
 }
+
 @media screen and (max-width: 375px) {
-    .card{
+    .card {
         width: 18rem;
     }
-    .card-text{
+
+    .card-text {
         font-size: 20px;
     }
 }
