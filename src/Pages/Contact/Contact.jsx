@@ -16,6 +16,8 @@ const Contact = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [feedback, setFeedback] = useState("");
+  const [category,setCategory]=useState('');
+
   const sendFeedback = async () => {
     if (name === "" || email === "" || feedback === "") {
       toast.error("Enter all the fields!!!");
@@ -24,6 +26,7 @@ const Contact = () => {
         Email: email,
         Message: feedback,
         Name: name,
+        category:category
       })
         .then((docRef) => {
           toast("Feedback is submitted,Thank You!!!");
@@ -77,7 +80,7 @@ const Contact = () => {
                 />
                 <br />
                 <div className="dropdown">
-                  <select name="services" className="services" >
+                  <select value={category} name="services" className="services" onChange={(value)=>setCategory(value.target.value)}>
                     <option value="" disabled selected hidden className="question">
                       What we can do for you?
                     </option>
